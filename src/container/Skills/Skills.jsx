@@ -8,24 +8,30 @@ import { images } from '../../constants'
 import './Skills.scss';
 
 const skills = [
-  { name: 'Figma', icon: images.figma, bgColor: '#eeeeee' },
+  { name: 'Figma', icon: images.figma, bgColor: '#f5f5f5' },
   { name: 'Flutter', icon: images.flutter, bgColor: 'rgb(198, 244, 255)' },
-  { name: 'CSS', icon: images.css, bgColor: '#eeeeee' },
-  { name: 'Python', icon: images.python, bgColor: '#eeeeee' },
+  { name: 'CSS', icon: images.css, bgColor: '#f5f5f5' },
   { name: 'Javascript', icon: images.javascript, bgColor: '#fbffc2' },
-  { name: 'Redux', icon: images.redux, bgColor: '#eeeeee' },
+  { name: 'Redux', icon: images.redux, bgColor: '#f5f5f5' },
   { name: 'Node', icon: images.node, bgColor: '#b8fee8' },
-  { name: 'Amazon', icon: images.amazon, bgColor: '#eeeeee' },
-  { name: 'HTML', icon: images.html, bgColor: '#eeeeee' },
   { name: 'Sass', icon: images.sass, bgColor: '#ffd1eb' },
   { name: 'Vue', icon: images.vue, bgColor: '#b8fee8' },
-  { name: 'Git', icon: images.git, bgColor: '#eeeeee' },
 ];
 
 const experiences = [
-  { year: '2020', works: [{name: 'Lorem, ipsum dolor sit amet consectetur adipisicing.', company: 'Lorem', desc: 'Quae dolorem cupiditate magnam tenetur nesciunt neque itaque non excepturi facilis id voluptatibus dignissimos, distinctio ad ea fugiat pariatur autem aut omnis!'}] },
-  { year: '2021', works: [{name: 'Lorem, ipsum dolor sit amet consectetur adipisicing.', company: 'Lorem', desc: 'Quae dolorem cupiditate magnam tenetur nesciunt neque itaque non excepturi facilis id voluptatibus dignissimos, distinctio ad ea fugiat pariatur autem aut omnis!'},{name: 'Lorem, ipsum dolor sit amet consectetur adipisicing.', company: 'Lorem', desc: 'Quae dolorem cupiditate magnam tenetur nesciunt neque itaque non excepturi facilis id voluptatibus dignissimos, distinctio ad ea fugiat pariatur autem aut omnis!'}] },
-  { year: '2022', works: [{name: 'Lorem, ipsum dolor sit amet consectetur adipisicing.', company: 'Lorem', desc: 'Quae dolorem cupiditate magnam tenetur nesciunt neque itaque non excepturi facilis id voluptatibus dignissimos, distinctio ad ea fugiat pariatur autem aut omnis!'},{name: 'Lorem, ipsum dolor sit amet consectetur adipisicing.', company: 'Lorem', desc: 'Quae dolorem cupiditate magnam tenetur nesciunt neque itaque non excepturi facilis id voluptatibus dignissimos, distinctio ad ea fugiat pariatur autem aut omnis!'}, {name: 'Lorem, ipsum dolor sit amet consectetur adipisicing.', company: 'Lorem', desc: 'Quae dolorem cupiditate magnam tenetur nesciunt neque itaque non excepturi facilis id voluptatibus dignissimos, distinctio ad ea fugiat pariatur autem aut omnis!'}] },
+  { year: '2020', works: [
+    {name: 'Lorem, ipsum dolor sit amet consectetur adipisicing.', company: 'Lorem', desc: 'Quae dolorem cupiditate magnam tenetur nesciunt neque itaque non excepturi facilis id voluptatibus dignissimos, distinctio ad ea fugiat pariatur autem aut omnis!'},
+  ]},
+
+  { year: '2021', works: [
+    {name: 'Lorem, ipsum dolor sit amet consectetur adipisicing.', company: 'Lorem', desc: 'Quae dolorem cupiditate magnam tenetur nesciunt neque itaque non excepturi facilis id voluptatibus dignissimos, distinctio ad ea fugiat pariatur autem aut omnis!'},
+    {name: 'Lorem, ipsum dolor sit amet consectetur adipisicing.', company: 'Lorem', desc: 'Quae dolorem cupiditate magnam tenetur nesciunt neque itaque non excepturi facilis id voluptatibus dignissimos, distinctio ad ea fugiat pariatur autem aut omnis!'},
+  ]},
+  
+  { year: '2022', works: [
+    {name: 'Lorem, ipsum dolor sit amet consectetur adipisicing.', company: 'Lorem', desc: 'Quae dolorem cupiditate magnam tenetur nesciunt neque itaque non excepturi facilis id voluptatibus dignissimos, distinctio ad ea fugiat pariatur autem aut omnis!'},
+    {name: 'Lorem, ipsum dolor sit amet consectetur adipisicing.', company: 'Lorem', desc: 'Quae dolorem cupiditate magnam tenetur nesciunt neque itaque non excepturi facilis id voluptatibus dignissimos, distinctio ad ea fugiat pariatur autem aut omnis!'},
+  ]},
 ];
 
 const Skills = () => {
