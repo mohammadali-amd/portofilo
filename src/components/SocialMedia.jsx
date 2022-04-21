@@ -6,10 +6,7 @@ import { motion } from 'framer-motion';
 const SocialMedia = () => {
   return (
     <div className='app__social'>
-        <motion.div
-          whileInView={{ x: [-100,0], opacity: [0,1] }}
-          transition= {{ duration: 0.5 }}
-        >
+        <div>
           <a href="#twitter" target="_blank" rel="noreferrer">
             <motion.div
               whileInView={{ scale: [0, 1] }}
@@ -20,12 +17,8 @@ const SocialMedia = () => {
               <BsTwitter />
             </motion.div>
           </a>
-        </motion.div>
-
-        <motion.div
-          whileInView={{ x: [-100,0], opacity: [0,1] }}
-          transition= {{ duration: 0.5 }}
-        >
+        </div>
+        <div>
           <a href="#twitter" target="_blank" rel="noreferrer">
             <motion.div
               whileInView={{ scale: [0, 1] }}
@@ -36,12 +29,8 @@ const SocialMedia = () => {
               <FaFacebookF />
             </motion.div>
           </a>
-        </motion.div>
-
-        <motion.div
-          whileInView={{ x: [-100,0], opacity: [0,1] }}
-          transition= {{ duration: 0.5 }}
-        >
+        </div>
+        <div>
           <a href="#twitter" target="_blank" rel="noreferrer">
             <motion.div
               whileInView={{ scale: [0, 1] }}
@@ -52,7 +41,7 @@ const SocialMedia = () => {
               <BsInstagram />
             </motion.div>
           </a>
-        </motion.div>
+        </div>
     </div>
   )
 }
