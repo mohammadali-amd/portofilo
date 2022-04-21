@@ -29,11 +29,17 @@ const Header = () => {
               <div style={{ marginLeft: 20 }}>
                 <p className='p-text'>Hellom I am</p>
                 <h1 className="head-text">Mohammad Ali</h1>
+                <p className='p-text'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste minima maxime voluptatem ducimus at veniam animi tempora dolorem perferendis, dolore blanditiis eum id illo repellendus cupiditate tempore totam ea ullam!, dolore blanditiis eum id illo repellendus cupiditate tempore totam ea ullam!, dolore blanditiis eum id illo repellendus cupiditate tempore totam ea ullam.</p>
               </div>
             </div>
             <div className="tag-cmp app__flex">
               <p className='p-text'>Web Developer</p>
               <p className='p-text'>Frontend</p>
+              <p className='p-text'>Backend</p>
+              <p className='p-text'>Seo</p>
+              <p className='p-text'>UI/UX</p>
+              <p className='p-text'>Insta management</p>
+              <p className='p-text'>Wordpress</p>
             </div>
           </div>
         </motion.div>
@@ -43,11 +49,11 @@ const Header = () => {
           transition= {{ duration: 0.5, delayChildren: 0.5 }}
           className= 'app__header-img'
         >
-          <img src={images.profile} alt="profile_bg" />
+          {/* <img src={images.person} alt="profile_bg" /> */}
           <motion.img 
             whileInView={{ scale: [0, 1] }}
             transition={{ duration: 1, ease: 'easeInOut' }}
-            src={images.circle}
+            src={images.header_pic}
             alt="profile_circle"
             className="overlay_circle"
           />
