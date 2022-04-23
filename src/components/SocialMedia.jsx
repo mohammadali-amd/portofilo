@@ -7,7 +7,7 @@ const SocialMedia = () => {
   return (
     <div className='app__social'>
         <div>
-          <a href="#twitter" target="_blank" rel="noreferrer">
+          <p target="_blank" rel="noreferrer">
             <motion.div
               whileInView={{ scale: [0, 1] }}
               whileHover={{ scale: [1, 0.90] }}
@@ -16,10 +16,10 @@ const SocialMedia = () => {
             >
               <BsTwitter />
             </motion.div>
-          </a>
+          </p>
         </div>
         <div>
-          <a href="#twitter" target="_blank" rel="noreferrer">
+          <p target="_blank" rel="noreferrer">
             <motion.div
               whileInView={{ scale: [0, 1] }}
               whileHover={{ scale: [1, 0.90] }}
@@ -28,10 +28,10 @@ const SocialMedia = () => {
             >
               <FaFacebookF />
             </motion.div>
-          </a>
+          </p>
         </div>
         <div>
-          <a href="#twitter" target="_blank" rel="noreferrer">
+          <a href="https://www.instagram.com/webstudio_store/" target="_blank" rel="noreferrer">
             <motion.div
               whileInView={{ scale: [0, 1] }}
               whileHover={{ scale: [1, 0.90] }}
