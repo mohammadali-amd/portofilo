@@ -21,14 +21,25 @@
     align-items: center;
   
     img {
-      width: 90px;
-      height: 20px;
+      // width: 90px;
+      height: 40px;
   
       @media screen and (min-width: 2000px) {
         width: 180px;
         height: 40px;
       }
     }
+
+    p {
+      font-size: 18pt;
+      font-weight: bold;
+      padding-right: 1rem;
+    }
+
+    @media screen and (max-width: 900px) {
+      display: none;
+    }
+    
   }
   
   .app__navbar-links {
