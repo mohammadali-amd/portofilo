@@ -12,11 +12,12 @@ import javascript from '../assets/javascript.png';
 import mu5 from '../assets/mu5.png';
 import node from '../assets/node.png';
 import python from '../assets/python.png';
-import react from '../assets/react.png';
+import reactjs from '../assets/reactjs.png';
 import redux from '../assets/redux.png';
 import sass from '../assets/sass.png';
 import typescript from '../assets/typescript.png';
 import vue from '../assets/vue.png';
+import wordpress from '../assets/wordpress.png';
 
 import about01 from '../assets/about01.png';
 import about02 from '../assets/about02.png';
@@ -27,7 +28,8 @@ import profile from '../assets/profile.png';
 import header_pic from '../assets/header_pic.svg';
 import person from '../assets/person.png';
 import circle from '../assets/circle.svg';
-import logo from '../assets/logo.png';
+import logo from '../assets/WEBSTUDIO.png';
+import logo_text from '../assets/webstudio-text.png';
 
 import adidas from '../assets/adidas.png';
 import amazon from '../assets/amazon.png';
@@ -52,7 +54,7 @@ export default {
   mu5,
   node,
   python,
-  react,
+  reactjs,
   redux,
   sass,
   typescript,
@@ -73,4 +75,6 @@ export default {
   nb,
   skype,
   spotify,
+  wordpress,
+  logo_text,
 };

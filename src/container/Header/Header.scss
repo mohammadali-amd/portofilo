@@ -1,6 +1,6 @@
 #home {
     position: relative;
-    background: url("../../assets/bgIMG.png");
+    // background: url("../../assets/bgIMG.png");
     background-size: cover;
     background-position: center;
     background-repeat: repeat;
@@ -43,8 +43,8 @@
     justify-content: flex-start;
     align-items: flex-start;
     height: 100%;
-  
-    margin: 0 2rem;
+    margin: 0 1rem;
+    padding-top: 3rem;
   
     @media screen and (max-width: 1200px) {
       width: 100%;
@@ -55,8 +55,8 @@
   .app__header-badge {
     width: 100%;
     display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
   
     .badge-cmp,
@@ -72,7 +72,7 @@
   
     .tag-cmp {
       flex-direction: column;
-      margin-top: 3rem;
+      margin: 3rem 0;
   
       p {
         width: 100%;
@@ -90,8 +90,8 @@
     }
   
     @media screen and (max-width: 1200px) {
-      justify-content: flex-start;
-      align-items: flex-start;
+      justify-content: center;
+      align-items: center;
     }
   }
   
@@ -102,7 +102,7 @@
     justify-content: space-evenly;
     align-items: flex-start;
     height: 100%;
-    margin-left: 1rem;
+    align-items: center;
   
     div {
       width: 100px;
@@ -113,25 +113,27 @@
       box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
   
       img {
-        width: 60%;
-        height: 60%;
+        width: 75%;
+        // height: 80%;
       }
     }
   
     // circles with different height & width
   
     div:nth-child(1) {
+      margin-right: -5rem;
       width: 100px;
       height: 100px;
     }
   
     div:nth-child(2) {
-      margin: 1.75rem;
+      // margin: 1.75rem;
       width: 150px;
       height: 150px;
     }
   
     div:nth-child(3) {
+      margin-right: -5rem;
       width: 70px;
       height: 70px;
     }
@@ -159,8 +161,16 @@
       flex-wrap: wrap;
       margin-left: 0;
   
+      div:nth-child(1) {
+        margin: 0;
+      }
+
+      div:nth-child(3) {
+        margin: 0;
+      }
+
       div {
-        margin: 1rem;
+        margin: 1rem 0;
       }
     }
   }
@@ -182,12 +192,12 @@
     }
   
     .overlay_circle {
-      // position: absolute;
+      position: absolute;
       left: 0;
       right: 0;
       bottom: 0;
       z-index: 0;
-      width: 100%;
+      width: 90%;
       // height: 90%;
     }
   

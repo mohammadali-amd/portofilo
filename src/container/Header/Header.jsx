@@ -18,38 +18,27 @@ const scaleVariants = {
 const Header = () => {
   return (
     <div className='app__header app__flex'>
-      <motion.div
-        whileInView={{ x: [-100,0], opacity: [0,1] }}
-        transition= {{ duration: 0.5 }}
-        className= 'app__header-info'
-        >
-          <div className='app__header-badge'>
-            <div className="badge-cmp app__flex">
-              <span>👋</span>
-              <div style={{ marginLeft: 20 }}>
-                <p className='p-text'>Hellom I am</p>
-                <h1 className="head-text">Mohammad Ali</h1>
-                <p className='p-text'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste minima maxime voluptatem ducimus at veniam animi tempora dolorem perferendis, dolore blanditiis eum id illo repellendus cupiditate tempore totam ea ullam!, dolore blanditiis eum id illo repellendus cupiditate tempore totam ea ullam!, dolore blanditiis eum id illo repellendus cupiditate tempore totam ea ullam.</p>
-              </div>
-            </div>
-            <div className="tag-cmp app__flex">
-              <p className='p-text'>Web Developer</p>
-              <p className='p-text'>Frontend</p>
-              <p className='p-text'>Backend</p>
-              <p className='p-text'>Seo</p>
-              <p className='p-text'>UI/UX</p>
-              <p className='p-text'>Insta management</p>
-              <p className='p-text'>Wordpress</p>
-            </div>
-          </div>
-        </motion.div>
 
         <motion.div
+          variants={scaleVariants}
+          whileInView={scaleVariants.whileInView}
+          className='app__header-circles'
+        >
+          {[images.wordpress, images.reactjs, images.flutter].map((circle, index) => (
+            <div className="circle-cmp app__flex" key={`circle-${index}`}>
+              <img src={circle} alt="circle" />
+            </div>
+          ))}
+        </motion.div>
+
+        <img src={images.person} alt="profile_bg" />
+
+        {/* <motion.div
           whileInView={{ opacity: [0,1] }}
           transition= {{ duration: 0.5, delayChildren: 0.5 }}
           className= 'app__header-img'
         >
-          {/* <img src={images.person} alt="profile_bg" /> */}
+          {/* <img src={images.person} alt="profile_bg" /> }
           <motion.img 
             whileInView={{ scale: [0, 1] }}
             transition={{ duration: 1, ease: 'easeInOut' }}
@@ -57,18 +46,37 @@ const Header = () => {
             alt="profile_circle"
             className="overlay_circle"
           />
-        </motion.div>
+        </motion.div> 
+        */}
         
         <motion.div
-          variants={scaleVariants}
-          whileInView={scaleVariants.whileInView}
-          className='app__header-circles'
+          whileInView={{ x: [-100,0], opacity: [0,1] }}
+          transition= {{ duration: 0.5 }}
+          className= 'app__header-info'
         >
-          {[images.flutter, images.redux, images.sass].map((circle, index) => (
-            <div className="circle-cmp app__flex" key={`circle-${index}`}>
-              <img src={circle} alt="circle" />
+          <div className='app__header-badge'>
+            <div className="badge-cmp app__flex">
+              <span>👋</span>
+              <div style={{ marginLeft: 20 }}>
+                <p className='p-text'>خوش آمدید</p>
+                <h1 className="head-text">وب استودیو</h1>
+                <p className='p-text'>
+                   ما اینجا به شما کمک می کنیم تا کسب و کار خودتون رو دیجیتال کنید.
+                   <br />
+                   برای ارتباط با ما میتونید از شبکه های اجتماعی و راه های ارتباطی در بخش تماس ها استفاده کنید.
+                   <br />
+                   با ما از رقبایتان چندقدم جلوتر باشید...
+                </p>
+              </div>
             </div>
-          ))}
+            <div className="tag-cmp app__flex">
+              <p className='p-text'>طراحی سایت</p>
+              <p className='p-text'>سئو و بهینه سازی</p>
+              <p className='p-text'>UI/UX</p>
+              <p className='p-text'>مدیریت اینستاگرام</p>
+              <p className='p-text'>آموزش</p>
+            </div>
+          </div>
         </motion.div>
 
     </div>
