@@ -19,10 +19,10 @@ import typescript from '../assets/typescript.png';
 import vue from '../assets/vue.png';
 import wordpress from '../assets/wordpress.png';
 
-import about01 from '../assets/about01.png';
 import about02 from '../assets/about02.png';
-import about03 from '../assets/about03.png';
-import about04 from '../assets/about04.png';
+import digitalMarketing from '../assets/digitalMarketing.svg';
+import seo from '../assets/seo.svg';
+import consulting from '../assets/consulting.svg';
 
 import profile from '../assets/profile.png';
 import header_pic from '../assets/header_pic.svg';
@@ -59,10 +59,10 @@ export default {
   sass,
   typescript,
   vue,
-  about01,
   about02,
-  about03,
-  about04,
+  digitalMarketing,
+  seo,
+  consulting,
   profile,
   header_pic,
   person,

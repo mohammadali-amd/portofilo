@@ -7,10 +7,11 @@ import './About.scss'
 import { urlFor, client } from '../client';
 
 const abouts = [
-  { title: 'Web Development', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, aliquid nesciunt.', imgUrl: images.about01},
-  { title: 'Web Design', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, aliquid nesciunt.', imgUrl: images.about02},
-  { title: 'UI/UX', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, aliquid nesciunt.', imgUrl: images.about03},
-  { title: 'Web Animations', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, aliquid nesciunt.', imgUrl: images.about04}
+  { title: 'آموزش و مشاوره رایگان', description: 'برای دریافت مشاوره رایگان در صفحات اجتماعی ما را دنبال کرده و با ما در ارتباط باشید و یا می توانید از راه های ارتباطی معرفی شده در سایت استفاده کنید. همچنین با دنبال کردن ما در شبکه های اجتماعی می توانید از آموزش ها استفاده کنید..', imgUrl: images.consulting},
+  { title: 'سئو و تولید محتوا', description: 'تلاش ما در تیم وب استودیو، دیده شدن کسب و کار شما و در نتیجه بالارفتن بازدید و فروش شماست. شما می توانید تولید محتوای کسب و کار خود را با مدرن ترین شیوه های جذب مخاطب، به تیم ما بسپارید و بهترین نتایج را بگیرید.', imgUrl: images.seo},
+  { title: 'خدمات دیجیتال مارکتینگ', description: 'شما می توانید با خیال راحت مدیریت پیج کاری خود را به ما بسپارید و در کمترین زمان ممکن، بهترین نتیجه را بگیرید و شاهد پیشرفت چشمگیر کسب و کار خود و فروش بیشتر محصولات و بالا رفتن درامد خود باشید.', imgUrl: images.digitalMarketing},
+  { title: 'طراحی وبسایت', description: 'امروزه داشتن یک وبسایت برای هر کسب و کاری امری ضروریست. شما می توانید طراحی صفر تا صد انواع وبسایت نظیر فروشگاهی، خبری، معرفی محصولات، وبلاگ، شخصی و ... را با متدهای استاندارد و بروز دنیا به تیم ما بسپارید .', imgUrl: images.about02},
+
 ];
 
 const About = () => {
@@ -23,7 +24,7 @@ const About = () => {
   
   return (
     <>
-      <h2 className='head-text'>I Know than <span>Good Development</span> <br /> means <span>Good Business</span></h2>
+      <h2 className='head-text'>ما در<span> وب استودیو</span>  چکار می کنیم؟ </h2>
 
       <div className="app__profiles">
         {abouts.map((about, index) => (
