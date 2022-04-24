@@ -1,18 +1,7 @@
-/* @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"); */
-
-  
-@font-face {
-  font-family: "IRANYekanExtraBold";
-  src: url('../src/assets/fonts/IRANYekanExtraBold.ttf');
-}
-
-@font-face {
-  font-family: "IRANYekanLight";
-  src: url('../src/assets/fonts/IRANYekanLight.ttf');
-}
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100;200;400;700;900&display=swap');
 
 :root {
-  /* --font-base: "IRANYekan"; */
+  --font-base: "Vazirmatn";
 
   --primary-color: #edf2f8;
   --secondary-color: #313bac;
