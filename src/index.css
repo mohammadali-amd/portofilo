@@ -1,18 +1,14 @@
 /* @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"); */
 
-@font-face {
-  font-family: "IRANYekan";
-  src: url('assets/fonts/IRANYekanRegular.ttf');
-}
-
+  
 @font-face {
   font-family: "IRANYekanExtraBold";
-  src: url('assets/fonts/IRANYekanExtraBold.ttf');
+  src: url('../src/assets/fonts/IRANYekanExtraBold.ttf');
 }
 
 @font-face {
   font-family: "IRANYekanLight";
-  src: url('assets/fonts/IRANYekanLight.ttf');
+  src: url('../src/assets/fonts/IRANYekanLight.ttf');
 }
 
 :root {

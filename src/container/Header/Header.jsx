@@ -64,7 +64,7 @@ const Header = () => {
               <p className='p-text'>طراحی سایت</p>
               <p className='p-text'>سئو و بهینه سازی</p>
               <p className='p-text'>UI/UX</p>
-              <p className='p-text'>مدیریت اینستاگرام</p>
+              <p className='p-text'>دیجیتال مارکتینگ</p>
               <p className='p-text'>آموزش</p>
             </div>
           </div>
