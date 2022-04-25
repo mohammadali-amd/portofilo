@@ -18,6 +18,7 @@ import sass from '../assets/sass.png';
 import typescript from '../assets/typescript.png';
 import vue from '../assets/vue.png';
 import wordpress from '../assets/wordpress.png';
+import bootstrap from '../assets/bootstrap.png';
 
 import about02 from '../assets/about02.png';
 import digitalMarketing from '../assets/digitalMarketing.svg';
@@ -56,6 +57,7 @@ export default {
   python,
   reactjs,
   redux,
+  bootstrap,
   sass,
   typescript,
   vue,
