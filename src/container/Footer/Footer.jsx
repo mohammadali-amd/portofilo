@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
 import { images } from '../../constants';
 import { AppWrap, MotionWrap } from '../../wrapper';
@@ -6,38 +7,31 @@ import { AppWrap, MotionWrap } from '../../wrapper';
 import './Footer.scss';
 
 const Footer = () => {
-  const [formData, setFormData] = useState({ name: '', email: '', message: '' });
-  const [isFormSubmitted, setIsFormSubmitted] = useState(false);
-  const [loading, setLoading] = useState(false);
 
-  const { username, email, message } = formData;
+  const form = useRef();
 
-  const handleChangeInput = (e) => {
-    const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
-  };
+  // sudygfuweyfb@outlook.com
+  // fubvi@#bfe88
+  
+  const sendEmail = (e) => {
+    e.preventDefault();
 
-  const handleSubmit = () => {
-    setLoading(true);
-
-  //   const contact = {
-  //     _type: 'contact',
-  //     name: formData.username,
-  //     email: formData.email,
-  //     message: formData.message,
-  //   };
-
-  //   client.create(contact)
-  //     .then(() => {
-  //       setLoading(false);
-  //       setIsFormSubmitted(true);
-  //     })
-  //     .catch((err) => console.log(err));
+    emailjs.sendForm('service_wq07u8r', 'template_g4g5tz6', form.current, 'HgOz4E_BvnmldEUSk')
+      .then((result) => {
+          console.log(result.text);
+          alert("Succesfull");
+      }, (error) => {
+          console.log(error.text);
+          alert("Error");
+      });
+      e.target.reset();
   };
 
   return (
     <>
-      <h2 className="head-text">Take a coffee & chat with me</h2>
+      <h2 className="head-text">
+        راه های ارتباط با ما!
+      </h2>
 
       <div className="app__footer-cards">
         <div className="app__footer-card ">
@@ -49,32 +43,31 @@ const Footer = () => {
           <a href="tel:+1 (123) 456-7890" className="p-text">+1 (123) 456-7890</a>
         </div>
       </div>
-      {!isFormSubmitted ? (
+      
+      <form ref={form} onSubmit={sendEmail} className="contactForm">
         <div className="app__footer-form app__flex">
           <div className="app__flex">
-            <input className="p-text" type="text" placeholder="Your Name" name="username" value={username} onChange={handleChangeInput} />
+            <input className="p-text" type="text" placeholder="Your Name" name="user_name" required />
           </div>
           <div className="app__flex">
-            <input className="p-text" type="email" placeholder="Your Email" name="email" value={email} onChange={handleChangeInput} />
+            <input className="p-text" type="email" placeholder="Your Email" name="user_email" required />
           </div>
           <div>
             <textarea
               className="p-text"
               placeholder="Your Message"
-              value={message}
               name="message"
-              onChange={handleChangeInput}
+              required
             />
           </div>
-          <button type="button" className="p-text" onClick={handleSubmit}>{!loading ? 'Send Message' : 'Sending...'}</button>
+          
+          <button className="p-text">
+            Send
+            <input type="submit" value="Send" style={{ display:'none' }} />
+          </button>
         </div>
-      ) : (
-        <div>
-          <h3 className="head-text">
-            Thank you for getting in touch!
-          </h3>
-        </div>
-      )}
+      </form>
+      
     </>
   );
 };
