@@ -68,6 +68,10 @@
       width: auto;
   
       box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+
+      @media screen and (max-width: 450px) {
+        margin-right: 1rem;
+      }
     }
   
     .tag-cmp {
