@@ -49,8 +49,8 @@ const Header = () => {
             <div className="badge-cmp app__flex">
               <span>👋</span>
               <div style={{ marginLeft: 20 }}>
-                <p className='p-text'>خوش آمدید</p>
-                <h1 className="head-text">وب استودیو</h1>
+                <p className='p-text'>خوش آمدید به</p>
+                <h1 className="head-text"> <span>وب استودیو</span> </h1>
                 <p className='p-text'>
                    ما اینجا به شما کمک می کنیم تا کسب و کار خودتون رو دیجیتال کنید.
                    <br />
@@ -61,11 +61,11 @@ const Header = () => {
               </div>
             </div>
             <div className="tag-cmp app__flex">
-              <p className='p-text'>طراحی سایت</p>
-              <p className='p-text'>سئو و بهینه سازی</p>
-              <p className='p-text'>UI/UX</p>
-              <p className='p-text'>دیجیتال مارکتینگ</p>
-              <p className='p-text'>آموزش</p>
+              <p className='p-text'>♦ طراحی سایت ♦</p>
+              <p className='p-text'>♦ سئو و بهینه سازی ♦</p>
+              <p className='p-text'>♦ تولید محتوا ♦</p>
+              <p className='p-text'>♦ دیجیتال مارکتینگ ♦</p>
+              <p className='p-text'>♦ آموزش ♦</p>
             </div>
           </div>
         </motion.div>
@@ -74,4 +74,4 @@ const Header = () => {
   )
 }
 
-export default AppWrap(Header , 'home');
+export default AppWrap(Header , 'خانه');
