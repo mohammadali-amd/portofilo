@@ -8,9 +8,7 @@ import { images } from '../../constants'
 import './Work.scss';
 
 const works = [
-  { imgUrl: images.flutter , name: 'Flutter' , projectLink: '' , codeLink: 'Flutter', title: 'Flutter', description: 'Flutter', tags: ['Mobile App', 'UI/UX', 'Web App', 'All'] },
-  { imgUrl: images.javascript , name: 'JavaScript' , projectLink: '' , codeLink: 'JavaScript', title: 'JavaScript', description: 'JavaScript', tags: ['UI/UX', 'Web App', 'All'] },
-  { imgUrl: images.node , name: 'Node JS' , projectLink: '' , codeLink: 'Node JS', title: 'Node JS', description: 'Node JS', tags: ['Web App', 'React JS', 'All'] },
+  { imgUrl: images.header_pic , name: 'Example' , projectLink: '' , codeLink: '', title: 'Example', description: 'Example', tags: ['All', 'React JS', 'Mobile App', 'UI/UX', 'Web App'] },
 ];
 
 const Work = () => {
@@ -45,7 +43,7 @@ const Work = () => {
 
   return (
     <>
-      <h2 className="head-text">My Creative <span>Portfolio</span> Section</h2>
+      <h2 className="head-text"> نمونه کار های ما در <span> وب استودیو </span> </h2>
 
       <div className="app__work-filter">
         {['React JS', 'UI/UX', 'Web App', 'Mobile App', 'All'].map((item, index) => (
@@ -117,6 +115,6 @@ const Work = () => {
 
 export default AppWrap(
   MotionWrap(Work, 'app__works'),
-  'work',
+  'نمونه کار',
   'app__primarybg',
 );
