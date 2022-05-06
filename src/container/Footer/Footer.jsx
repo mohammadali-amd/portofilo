@@ -36,7 +36,7 @@ const Footer = () => {
       <div className="app__footer-cards">
         <div className="app__footer-card ">
           <img src={images.email} alt="email" />
-          <a href="mailto:hello@micael.com" className="p-text">hello@micael.com</a>
+          <a href="mailto:hello@micael.com" className="p-text">example@gmail.com</a>
         </div>
         <div className="app__footer-card">
           <img src={images.mobile} alt="phone" />
@@ -47,22 +47,22 @@ const Footer = () => {
       <form ref={form} onSubmit={sendEmail} className="contactForm">
         <div className="app__footer-form app__flex">
           <div className="app__flex">
-            <input className="p-text" type="text" placeholder="Your Name" name="user_name" required />
+            <input className="p-text" type="text" placeholder="نام" name="user_name" required />
           </div>
           <div className="app__flex">
-            <input className="p-text" type="email" placeholder="Your Email" name="user_email" required />
+            <input className="p-text" type="email" placeholder="آدرس ایمیل" name="user_email" required />
           </div>
           <div>
             <textarea
               className="p-text"
-              placeholder="Your Message"
+              placeholder="پیام شما"
               name="message"
               required
             />
           </div>
           
           <button className="p-text">
-            Send
+            ارسال
             <input type="submit" value="Send" style={{ display:'none' }} />
           </button>
         </div>
@@ -74,6 +74,6 @@ const Footer = () => {
 
 export default AppWrap(
   MotionWrap(Footer, 'app__footer'),
-  'contact',
+  'تماس با ما',
   'app__whitebg',
 );
