@@ -8,13 +8,13 @@ import { images } from '../../constants'
 import './Work.scss';
 
 const works = [
-  { imgUrl: images.header_pic , name: 'Example' , projectLink: '' , codeLink: '', title: 'Example', description: 'Example', tags: ['All', 'React JS', 'Mobile App', 'UI/UX', 'Web App'] },
+  { imgUrl: images.header_pic , name: 'Example' , projectLink: '' , codeLink: '', title: 'Example', description: 'Example', tags: ['همه', 'React JS', 'برنامه موبایل', 'UI/UX', 'وبسایت'] },
 ];
 
 const Work = () => {
   // const [works, setWorks] = useState([]);
   const [filterWork, setFilterWork] = useState([]);
-  const [activeFilter, setActiveFilter] = useState('All');
+  const [activeFilter, setActiveFilter] = useState('همه');
   const [animateCard, setAnimateCard] = useState({ y: 0, opacity: 1 });
 
   // useEffect(() => {
@@ -33,7 +33,7 @@ const Work = () => {
     setTimeout(() => {
       setAnimateCard([{ y: 0, opacity: 1 }]);
 
-      if (item === 'All') {
+      if (item === 'همه') {
         setFilterWork(works);
       } else {
         setFilterWork(works.filter((work) => work.tags.includes(item)));
@@ -46,7 +46,7 @@ const Work = () => {
       <h2 className="head-text"> نمونه کار های ما در <span> وب استودیو </span> </h2>
 
       <div className="app__work-filter">
-        {['React JS', 'UI/UX', 'Web App', 'Mobile App', 'All'].map((item, index) => (
+        {['React JS', 'UI/UX', 'وبسایت', 'برنامه موبایل', 'همه'].map((item, index) => (
           <div
             key={index}
             onClick={() => handleWorkFilter(item)}
