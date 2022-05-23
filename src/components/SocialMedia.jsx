@@ -31,7 +31,7 @@ const SocialMedia = () => {
           </p>
         </div>
         <div>
-          <a href="https://www.instagram.com/webstudio_store/" target="_blank" rel="noreferrer">
+          <a href="https://www.instagram.com/webstudio.official/" target="_blank" rel="noreferrer">
             <motion.div
               whileInView={{ scale: [0, 1] }}
               whileHover={{ scale: [1, 0.90] }}
