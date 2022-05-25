@@ -1,10 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { motion } from 'framer-motion';
 
 import { AppWrap, MotionWrap } from '../../wrapper';
 import { images } from '../../constants'
 import './About.scss'
-import { urlFor, client } from '../client';
 
 const abouts = [
   { title: 'آموزش و مشاوره رایگان', description: 'برای دریافت مشاوره رایگان در صفحات اجتماعی ما را دنبال کرده و با ما در ارتباط باشید و یا می توانید از راه های ارتباطی معرفی شده در سایت استفاده کنید. همچنین با دنبال کردن ما در شبکه های اجتماعی می توانید از آموزش ها استفاده کنید..', imgUrl: images.consulting},
@@ -15,12 +14,6 @@ const abouts = [
 ];
 
 const About = () => {
-  // const [abouts, setAbouts] = useState([]);
-  // useEffect(() => {
-  //   const query = '*[_type == "abouts"]';
-  //   client.fetch(query)
-  //   .then((data) =>setAbouts(data))
-  // }, [])
   
   return (
     <>
@@ -36,7 +29,6 @@ const About = () => {
             key={about.title + index}
           >
             <img src={about.imgUrl} alt={about.title} />
-            {/* <img src={urlFor(about.imgUrl)} alt={about.title} /> */}
             <h2 className="bold-text" style={{ marginTop: 20}}> {about.title} </h2>
             <p className="p-text" style={{ marginTop: 10}}> {about.description} </p>
           </motion.div>
