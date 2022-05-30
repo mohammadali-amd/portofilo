@@ -13,7 +13,9 @@ const Navbar = () => {
     <nav className='app__navbar'>
       
       <div>
-        <img src={images.logo_text} alt="logo-name" style={{ height:30, paddingTop: 10 }} />
+        <a href='/#خانه'>
+          <img src={images.logo_text} alt="logo-name" style={{ height:30, paddingTop: 10 }} />
+        </a>
       </div>
       
       <ul className='app__navbar-links'>
