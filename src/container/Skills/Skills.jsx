@@ -27,7 +27,7 @@ const experiences = [
 const Skills = () => {
 
   return (
-    <>
+    <React.Fragment>
       <h2 className="head-text">
         مهارت ها و تجربیات ما
       </h2>
@@ -94,7 +94,7 @@ const Skills = () => {
         </motion.div>
         
       </div>
-    </>
+    </React.Fragment>
   );
 };
 

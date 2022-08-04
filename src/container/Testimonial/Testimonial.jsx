@@ -23,7 +23,7 @@ const Testimonial = () => {
   };
 
   return (
-    <>
+    <React.Fragment>
       {testimonials.length && (
         <>
           <div className="app__testimonial-item app__flex">
@@ -60,7 +60,7 @@ const Testimonial = () => {
           </motion.div>
         ))}
       </div>
-    </>
+    </React.Fragment>
   );
 };
 

@@ -27,7 +27,7 @@ const Footer = () => {
   };
 
   return (
-    <>
+    <React.Fragment>
       <h2 className="head-text">
         راه های ارتباط با ما!
       </h2>
@@ -67,7 +67,7 @@ const Footer = () => {
         </div>
       </form>
       
-    </>
+    </React.Fragment>
   );
 };
 

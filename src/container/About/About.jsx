@@ -16,7 +16,7 @@ const abouts = [
 const About = () => {
   
   return (
-    <>
+    <React.Fragment>
       <h2 className='head-text'>ما در<span> وب استودیو</span>  چکار می کنیم؟ </h2>
 
       <div className="app__profiles">
@@ -34,7 +34,7 @@ const About = () => {
           </motion.div>
         ))}
       </div>
-    </>
+    </React.Fragment>
   )
 }
 
