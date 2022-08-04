@@ -7,24 +7,31 @@ import { AppWrap, MotionWrap } from '../../wrapper';
 import { images } from '../../constants'
 import './Work.scss';
 
-const works = [
-  { imgUrl: images.header_pic , name: 'Example' , projectLink: '' , codeLink: '', title: 'Example', description: 'Example', tags: ['همه', 'React JS', 'برنامه موبایل', 'UI/UX', 'وبسایت'] },
-];
+// const works = [
+//   { imgUrl: images.header_pic, name: 'Example', projectLink: '', codeLink: '', title: 'Example', description: 'Example', tags: ['همه', 'React JS', 'برنامه موبایل', 'UI/UX', 'وبسایت'] },
+// ];
 
 const Work = () => {
-  // const [works, setWorks] = useState([]);
+  const [works, setWorks] = useState([]);
   const [filterWork, setFilterWork] = useState([]);
   const [activeFilter, setActiveFilter] = useState('همه');
   const [animateCard, setAnimateCard] = useState({ y: 0, opacity: 1 });
 
-  // useEffect(() => {
-  //   const query = '*[_type == "works"]';
+  useEffect(() => {
+    // const query = '*[_type == "works"]';
+    const query = [
+      { imgUrl: images.gym_fitness, name: 'Fitness Club', projectLink: '', codeLink: '', title: 'Fitness Club', description: 'Fitness Club', tags: ['وبسایت', 'React JS', 'UI/UX', 'همه'] },
+      { imgUrl: images.webstudio1, name: 'Webstudio', projectLink: '', codeLink: '', title: 'Webstudio', description: 'Webstudio', tags: ['همه', 'React JS', 'وبسایت'] },
+      { imgUrl: images.header_pic, name: 'Example', projectLink: '', codeLink: '', title: 'Example', description: 'Example', tags: ['برنامه موبایل'] },
+    ];
+    setWorks(query);
+    setFilterWork(query);
 
-  //   client.fetch(query).then((data) => {
-  //     setWorks(data);
-  //     setFilterWork(data);
-  //   });
-  // }, []);
+    // fetch(query).then((data) => {
+    //   setWorks(query);
+    //   setFilterWork(query);
+    // });
+  }, []);
 
   const handleWorkFilter = (item) => {
     setActiveFilter(item);
@@ -42,7 +49,7 @@ const Work = () => {
   };
 
   return (
-    <>
+    <React.Fragment>
       <h2 className="head-text"> نمونه کار های ما در <span> وب استودیو </span> </h2>
 
       <div className="app__work-filter">
@@ -109,7 +116,7 @@ const Work = () => {
           </div>
         ))}
       </motion.div>
-    </>
+    </React.Fragment>
   );
 };
 
