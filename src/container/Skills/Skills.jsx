@@ -7,14 +7,14 @@ import { images } from '../../constants'
 import './Skills.scss';
 
 const skills = [
-  { name: 'Wordpress', icon: images.wordpress, bgColor: '#f5f5f5' },
-  { name: 'Flutter', icon: images.flutter, bgColor: 'rgb(227, 249, 255)' },
-  { name: 'Bootstrap', icon: images.bootstrap, bgColor: '#f5f5f5' },
-  { name: 'Javascript', icon: images.javascript, bgColor: '#fdffdf' },
-  { name: 'HTML', icon: images.html, bgColor: '#fff2d6' },
-  { name: 'Node', icon: images.node, bgColor: '#f5f5f5' },
-  { name: 'Sass', icon: images.sass, bgColor: '#ffe3f3' },
-  { name: 'React Js', icon: images.reactjs, bgColor: '#f5f5f5' },
+  { name: 'Wordpress', icon: images.wordpress, bgColor: '#eef1ff' },
+  { name: 'Flutter', icon: images.flutter, bgColor: 'rgb(236, 251, 255)' },
+  { name: 'Bootstrap', icon: images.bootstrap, bgColor: '#fcebffdd' },
+  { name: 'Material UI', icon: images.mu5, bgColor: '#e6feff' },
+  { name: 'Sass', icon: images.sass, bgColor: '#ffeef8de' },
+  { name: 'Javascript', icon: images.javascript, bgColor: '#fbfde5' },
+  { name: 'React Js', icon: images.reactjs, bgColor: '#edfbff' },
+  { name: 'Node', icon: images.node, bgColor: '#eefff1e7' },
 ];
 
 const experiences = [
