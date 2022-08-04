@@ -20,8 +20,8 @@ const Work = () => {
   useEffect(() => {
     // const query = '*[_type == "works"]';
     const query = [
-      { imgUrl: images.gym_fitness, name: 'Fitness Club', projectLink: '', codeLink: '', title: 'Fitness Club', description: 'Fitness Club', tags: ['وبسایت', 'React JS', 'UI/UX', 'همه'] },
-      { imgUrl: images.webstudio1, name: 'Webstudio', projectLink: '', codeLink: '', title: 'Webstudio', description: 'Webstudio', tags: ['همه', 'React JS', 'وبسایت'] },
+      { imgUrl: images.gym_fitness, name: 'Fitness Club', projectLink: 'https://gym-exercises.pages.dev/', codeLink: 'https://github.com/mohammadali-amd/gym_exercises', title: 'Fitness Club', description: 'Fitness Club', tags: ['وبسایت', 'React JS', 'UI/UX', 'همه'] },
+      { imgUrl: images.webstudio1, name: 'Webstudio', projectLink: 'https://webstudio.pages.dev/', codeLink: 'https://github.com/mohammadali-amd/portofolio', title: 'Webstudio', description: 'Webstudio', tags: ['همه', 'React JS', 'وبسایت'] },
       { imgUrl: images.header_pic, name: 'Example', projectLink: '', codeLink: '', title: 'Example', description: 'Example', tags: ['برنامه موبایل'] },
     ];
     setWorks(query);
