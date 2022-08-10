@@ -21,8 +21,8 @@ const Work = () => {
     // const query = '*[_type == "works"]';
     const query = [
       { imgUrl: images.gym_fitness, name: 'Fitness Club', projectLink: 'https://gym-exercises.pages.dev/', codeLink: 'https://github.com/mohammadali-amd/gym_exercises', title: 'Fitness Club', description: 'Fitness Club', tags: ['وبسایت', 'React JS', 'UI/UX', 'همه'] },
+      { imgUrl: images.foodOrder, name: 'Food Order', projectLink: 'https://food-order-app.pages.dev/', codeLink: 'https://github.com/mohammadali-amd/Food-Order-App', title: 'Food Order', description: 'Food Order', tags: ['همه', 'React JS', 'وبسایت'] },
       { imgUrl: images.webstudio1, name: 'Webstudio', projectLink: 'https://webstudio.pages.dev/', codeLink: 'https://github.com/mohammadali-amd/portofolio', title: 'Webstudio', description: 'Webstudio', tags: ['همه', 'React JS', 'وبسایت'] },
-      { imgUrl: images.header_pic, name: 'Example', projectLink: '', codeLink: '', title: 'Example', description: 'Example', tags: ['برنامه موبایل'] },
     ];
     setWorks(query);
     setFilterWork(query);

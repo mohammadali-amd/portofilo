@@ -33,6 +33,7 @@ import logo from '../assets/WEBSTUDIO.png';
 import logo_text from '../assets/webstudio-text.png';
 import gym_fitness from '../assets/GymFitness.png';
 import webstudio1 from '../assets/Webstudio1.png';
+import foodOrder from '../assets/foodOrder.png';
 
 import adidas from '../assets/adidas.png';
 import amazon from '../assets/amazon.png';
@@ -83,4 +84,5 @@ export default {
   logo_text,
   gym_fitness,
   webstudio1,
+  foodOrder,
 };
