@@ -34,6 +34,7 @@ import logo_text from '../assets/webstudio-text.png';
 import gym_fitness from '../assets/GymFitness.png';
 import webstudio1 from '../assets/Webstudio1.png';
 import foodOrder from '../assets/foodOrder.png';
+import HooBank from '../assets/HooBank.png';
 
 import adidas from '../assets/adidas.png';
 import amazon from '../assets/amazon.png';
@@ -85,4 +86,5 @@ export default {
   gym_fitness,
   webstudio1,
   foodOrder,
+  HooBank
 };

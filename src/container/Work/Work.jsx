@@ -20,9 +20,10 @@ const Work = () => {
   useEffect(() => {
     // const query = '*[_type == "works"]';
     const query = [
-      { imgUrl: images.gym_fitness, name: 'Fitness Club', projectLink: 'https://gym-exercises.pages.dev/', codeLink: 'https://github.com/mohammadali-amd/gym_exercises', title: 'Fitness Club', description: 'Fitness Club', tags: ['وبسایت', 'React JS', 'همه'] },
-      { imgUrl: images.foodOrder, name: 'Food Order', projectLink: 'https://food-order-app.pages.dev/', codeLink: 'https://github.com/mohammadali-amd/Food-Order-App', title: 'Food Order', description: 'Food Order', tags: ['همه', 'React JS', 'وبسایت'] },
-      { imgUrl: images.webstudio1, name: 'Webstudio', projectLink: 'https://webstudio.pages.dev/', codeLink: 'https://github.com/mohammadali-amd/portofolio', title: 'Webstudio', description: 'Webstudio', tags: ['همه', 'React JS', 'وبسایت', 'UI/UX'] },
+      { imgUrl: images.gym_fitness, name: 'Fitness Club', projectLink: 'https://gym-exercises.pages.dev/', codeLink: 'https://github.com/mohammadali-amd/gym_exercises', title: 'Fitness Club', description: 'Material UI', tags: ['وبسایت', 'React JS', 'همه'] },
+      { imgUrl: images.foodOrder, name: 'Food Order', projectLink: 'https://food-order-app.pages.dev/', codeLink: 'https://github.com/mohammadali-amd/Food-Order-App', title: 'Food Order', description: 'ReactJS', tags: ['همه', 'React JS', 'وبسایت'] },
+      { imgUrl: images.HooBank, name: 'HooBank', projectLink: 'https://hoo-bank.pages.dev/', codeLink: 'https://github.com/mohammadali-amd/Modern-UI-UX-Website', title: 'HooBank', description: 'TailwindCSS', tags: ['همه', 'React JS', 'وبسایت', 'UI/UX'] },
+      // { imgUrl: images.webstudio1, name: 'Webstudio', projectLink: 'https://webstudio.pages.dev/', codeLink: 'https://github.com/mohammadali-amd/portofolio', title: 'Webstudio', description: 'Webstudio', tags: ['همه', 'React JS', 'وبسایت', 'UI/UX'] },
     ];
     setWorks(query);
     setFilterWork(query);
